@@ -7,7 +7,6 @@
 ```js
 遍历
 while(head){
-
   head = head.next
 }
 return head
@@ -62,7 +61,24 @@ functon walk(treeNode){
     }else{
       right = mid
     }
+
+    let mid = (left+right)>>1
+    if(arr[mid]<nums[i]){
+      left = mid+1
+    }else if(arr[mid]==nums[i]){
+      right = mid
+    }
+  
+
   }
+
+  while left<right 还是left<=right
+  left =mid 还是Mid+1
+  right=mid还是mid-1
+  
+  搜索一个元素的时候，通常<= mid需要+-1
+  搜索便捷的时候，mid+1,mid，left<right
+
 ```
 
 1. 双指针（快慢指针，头尾指针）
