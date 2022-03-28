@@ -29,7 +29,7 @@ for(let i=0;i<arr.length;i++){
 (二叉树)
 functon walk(treeNode){
   if(treeNode==null){
-    return 
+    return treeNode
   }
   
   处理 treeNode //进入节点  
@@ -44,6 +44,22 @@ functon walk(treeNode){
   walk(treeNode.right)
   处理 treeNode //离开节点
 }
+function walk(treeNode, res = []) {
+    if(treeNode==null) {
+      return treeNode
+    }
+    const stack = [treeNode]
+    let cur = null
+    while(stack.length) {
+        cur = stack.pop()
+        res.push(cur.val) //前
+        cur.right && stack.push(cur.right)
+        cur.left && stack.push(cur.left)
+    }
+    return res
+};
+
+
 ```
 
 
