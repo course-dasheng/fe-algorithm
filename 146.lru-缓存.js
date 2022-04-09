@@ -8,6 +8,7 @@
 /**
  * @param {number} capacity
  */
+// Vue3的keepalive组件就用了这个LRU管理组件的缓存
 var LRUCache = function (capacity) {
   this.map = new Map()
   this.capacity = capacity
