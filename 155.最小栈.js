@@ -8,7 +8,8 @@
 
 var MinStack = function() {
   this.stack = []
-  this.mins = [Infinity]
+  // this.mins = [Infinity]
+  this.mins = []
 };
 // 1,2,3 
 /** 
@@ -19,9 +20,17 @@ function last(arr){
   return arr[arr.length-1]
 }
 MinStack.prototype.push = function(val) {
-  let item = Math.min(last(this.mins),val)
+  
   this.stack.push(val)
-  this.mins.push(item)
+
+  // let item = Math.min(last(this.mins),val)
+  // mins中不放Infinity 也可以这么写
+  if(this.mins.length){
+    this.mins.push(Math.min(last(this.mins),val))
+  }else{
+    this.mins.push(val)
+
+  }
 };
 
 /**
