@@ -1,6 +1,6 @@
 # 前端啃算法
 
-![](https://secure2.wostatic.cn/static/bGgaskZf14PRtFuFaqCuLB/image.png?auth_key=1652574355-9cqFKjWD87Liztmg5RUdWF-0-7914ac7273943bbeae65eedd6c234104)
+![](./assets/suanfa.png)
 ## 1 前端算法入门
 
 通过简单的算法题，初步掌握算法和数据结构的门槛，并且在前端的框架源码中用到的算法和数据结构进行分析，进一步巩固算法思想
