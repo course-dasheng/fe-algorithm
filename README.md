@@ -22,12 +22,12 @@
 ├── recursion       递归+回溯
 ├── dynamic         动态规划
 ├── greedy          贪心算法
-├── interview      大厂面试相关算法
+├── interview       大厂面试相关算法 （面试真题）
 │   ├── bit.js      位运算
 │   ├── heap.js     二叉堆
 │   ├── leftpad.js  leftpad
-│   └── limit.js    并发量控制
-    ...
+│   ├── limit.js    并发量控制
+    └── ...学员面试中遇见的算法题
 ```
 
 * 解题套路总结
