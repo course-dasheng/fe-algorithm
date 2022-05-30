@@ -1,5 +1,5 @@
 # 前端啃算法
-大家可以把刷算法题，当成有趣的脑筋急转弯
+大家可以把刷算法题，当成有趣的脑筋急转弯，还有配套[视频课程](https://blc.h5.xeknow.com/s/Qbtpo)
 
 
 ![](./assets/suanfa-vx.jpg)
