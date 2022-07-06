@@ -62,8 +62,8 @@ var isSameTree1 = function(p,q){
     let queueP = [p]
     let queueQ = [q]
     while(queueP.length && queueQ.length){
-      const nodeP = queueP.pop()
-      const nodeQ = queueQ.pop()
+      const nodeP = queueP.shift()
+      const nodeQ = queueQ.shift()
       if(nodeP.val!==nodeQ.val){
         return false
       }
@@ -81,7 +81,7 @@ var isSameTree1 = function(p,q){
         return false
       }
     }
-    return queueP.length===0 && queueQ.length===0
+    return true
 }
 // @lc code=end
 
