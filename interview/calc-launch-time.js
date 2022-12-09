@@ -4,9 +4,6 @@
 // 0表示不依赖。当服务依赖的服务彼此之间没有依赖关系时，这些服务可以并行启动。
 // 题目保证服务之间不存在循环依赖关系，求服务k（1<=k<=n）启动需要的时间。
 
-function clone(obj){
-  return JSON.parse(JSON.stringify(obj))
-}
 function calcLaunchTime(arr,k) {
   // 1. 生成依赖关系图
   let obj = {}
