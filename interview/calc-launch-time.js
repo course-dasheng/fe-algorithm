@@ -8,6 +8,7 @@ function calcLaunchTime(arr,k) {
   // 1. 生成依赖关系图
   let obj = {}
   arr.forEach((row,i)=>{
+    if(i+1>k){return}
     // id:任务id
     // next:下一步的任务
     // cost:任务的执行时间
@@ -80,4 +81,16 @@ let arr3 = [
   [0, 1, 1, 4]
 ]
 //8
-console.log(calcLaunchTime(arr3,5))
+console.log(calcLaunchTime(arr3,4))
+
+let arr4 = [
+  [1, 0, 0, 0, 0, 0, 0, 0],
+  [0, 2, 0, 0, 0, 0, 0, 0],
+  [1, 1, 3, 0, 0, 0, 0, 0],
+  [0, 0, 1, 4, 0, 0, 0, 0],
+  [0, 0, 0, 1, 5, 0, 0, 0],
+  [0, 0, 0, 1, 0, 6, 0, 0],
+  [0, 0, 0, 0, 1, 1, 7, 0],
+  [0, 0, 0, 0, 0, 0, 1, 8],
+]
+console.log(calcLaunchTime(arr4,8))
