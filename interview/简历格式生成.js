@@ -29,8 +29,9 @@ function generateHtml(arr){
     if(item==='-'){
       return `<div class="item block"></div>`
     }else{
+      console.log(item)
       return `<div class="flex">
-        ${item.map(v=>`<div class="item" style="flex:${v}"></div>`)}
+        ${item.map(v=>`<div class="item" style="flex:${v}"></div>`).join('')}
       </div>`
     }
   })
@@ -43,9 +44,11 @@ function generateHtml(arr){
     <title>Document</title>
     <style>
       .item{
-        background:#ff57be;
         height:40px;
         margin:10px 0;
+        padding:10px;
+        justify-content:center;
+        border:1px black solid;
       }
       .flex{
         display:flex;
