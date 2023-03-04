@@ -63,15 +63,17 @@
 
 ## 大厂面试题中的算法和设计套路
 * 字节面试题：
-  * 异步任务并发数控制   limit
+  * [异步任务并发数控制](./interview/limit.js) 
+    * [primise版本](./interview/limit-promise.js)
   * 1472.设计浏览器历史记录.js
   * [二叉树底层的最左元素](https://leetcode.cn/problems/LwUNpT/)
 * 滴滴面试题
-  * 1797.设计一个验证系统.js
+  * 
+  * [1797.设计一个验证系统.js](./interview/1797.%E8%AE%BE%E8%AE%A1%E4%B8%80%E4%B8%AA%E9%AA%8C%E8%AF%81%E7%B3%BB%E7%BB%9F.js)
 * 阿里面试题
-  * 933.最近的请求次数.js 
+  * [933.最近的请求次数.js](./interview/933.%E6%9C%80%E8%BF%91%E7%9A%84%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0.js)
 * 百度面试题
-  * 23.合并k个升序链表.js
+  * [23.合并k个升序链表.js](./interview/23.%E5%90%88%E5%B9%B6k%E4%B8%AA%E5%8D%87%E5%BA%8F%E9%93%BE%E8%A1%A8.js)
 * 腾讯面试题
   * 148.排序链表
   * 341.扁平化嵌套列表迭代器  数组扁平化
@@ -82,7 +84,11 @@
 * 小厂面试题
   * 2.两数相加
   * 217.存在重复元素.js
-* 未完待续....
+* 特斯拉
+  * [青蛙跳跃最大距离](./interview/frog-jump.js)
+* 华为
+  * [服务启动时间](./interview/calc-launch-time.js)
+* 
 * 如何确定文件的依赖关系  webpack vite和图
 * React任务调度和优先级队列
 * 区块链和链表
