@@ -20,8 +20,9 @@
 // 动态规划
 function solution(blocks) {
   let ret = [] // 每一个block[i]作为起点的时候，最大的距离
+  
   for(let i=0;i<blocks.length;i++) {
-    // console.log(first)
+    // i分界线，左右两个青蛙开始跳
     let j = k = i
     for(j=i;j>=0;j--){
       // 第一只青蛙从右向左跳
