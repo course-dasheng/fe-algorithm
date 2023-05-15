@@ -2,6 +2,7 @@
  * @param {string} version1
  * @param {string} version2
  * @return {number}
+ * rip https://twitter.com/haoel/status/1654331337971732480
  */
 var compareVersion = function(version1, version2) {
   const arr1 = version1.split('.')
